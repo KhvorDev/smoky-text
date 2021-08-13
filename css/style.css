@@ -1,0 +1,42 @@
+body{
+    background: #222;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.text{
+    text-align: center;
+    user-select: none;
+    font-size: 25px;
+    color: #fff;
+    
+}
+
+.text span {
+    display: inline-block;
+    /* cursor: pointer; */
+
+}
+
+.active{
+    animation: smoke 2s linear forwards;
+    
+}
+
+@keyframes smoke {
+    20% {
+        color: yellow;
+    }
+    40% {
+        color: green;
+    }
+    100% {
+        opacity: 0;
+        filter: blur(25px);
+        transform: translateY(-300px) translateX(300px) rotate(360deg) scale(4);
+    }
+}
